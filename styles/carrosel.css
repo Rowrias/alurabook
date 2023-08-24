@@ -35,6 +35,10 @@
     margin-bottom: 0.5em;
 }
 
+.descriçao__estrelinha {
+    margin-bottom: 0.5em;
+}
+
 .descriçao__titulo {
     color: var(--laranja);
     font-weight: 700;
@@ -49,6 +53,10 @@
 
 .descriçao__texto {
     font-size: 14px;
+}
+
+.descriçao__foto {
+    margin-left: 0.3em;
 }
 
 .card__botoes {
