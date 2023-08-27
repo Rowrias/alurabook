@@ -24,6 +24,14 @@
     display: inline-block;
 }
 
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+    background-image: url("../img/Menu Aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
 .container__imagem {
     padding: 1em;
 }
@@ -102,6 +110,24 @@
     .opçoes__botao:checked~.lista-menu {
         display: block;
         width: auto;
+    }
+
+    .opçoes__botao:checked~.opçoes__rotulo>.opçoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opçoes__item {
+        padding: 1em 1em 1.5em;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
     }
 
     .opçoes__botao {
