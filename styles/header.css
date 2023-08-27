@@ -58,11 +58,7 @@
     text-transform: uppercase;
 }
 
-.container__titulo {
-    display: none;
-}
-
-.opçoes {
+.container__titulo, .opçoes, .container__texto {
     display: none;
 }
 
@@ -110,5 +106,31 @@
 
     .opçoes__botao {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .cabeçalho {
+        padding: 0 2em;
+    }
+
+    .container__link {
+        color: var(--preto);
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin: 0.5em;
+    }
+
+    .container__link-imagem {
+        margin: 0.5em;
+    }
+
+    .opçoes {
+        margin-right: auto;
+    }
+
+    .container__texto {
+        display: block;
     }
 }
